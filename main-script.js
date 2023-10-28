@@ -1,19 +1,31 @@
 sayHello();
 
+//Session storage and local storage to save theme data.
 let currentTheme = sessionStorage.getItem("currentTheme");
 let currentThemeLocal = localStorage.getItem("currentTheme") 
 
+//Set the theme for returning users.
 if (currentThemeLocal != null) {
     setTheme(currentThemeLocal);
 } else {
     setTheme("default")
 } 
 
+//Redirect to my linkedin.
 $("#linkedin").on("click", function() {
     console.log("Going to Joshua's Linked in!")
     window.open("https://www.linkedin.com/in/joshua-ngo/")
 })
 
+//Redirect to my github
+$("#github").on("click", function() {
+    console.log("Going to Joshua's Github.")
+    window.open("https://github.com/Joshngo")
+})
+
+// $("#email").on("click", copyEmail());
+
+//Open the chatroom project page.
 $("#chatroom-readmore").on("click", function() {
     console.log("Heard.")
     window.open("chatroom-project.html");
@@ -37,6 +49,8 @@ $("#contact-nav").on("click", function () {
 
 
 //Use jquery to set up the theme dot functionality.
+//Depending on what is clicked, it will send that theme to the 
+//setTheme method.
 let themeButtons = $(".theme-button");
 
 for (var i = 0; themeButtons.length > i; i++) {
@@ -47,6 +61,7 @@ for (var i = 0; themeButtons.length > i; i++) {
     })
 };
 
+//Set the theme based on what is passed in. Only 4 possible types.
 function setTheme(theme) {
     if (theme == "default") {
         $("#color-theme").attr("href", "default.css")
@@ -72,6 +87,13 @@ function setTheme(theme) {
     sessionStorage.setItem("currentTheme", theme)
 }
 
+// Unused function -> Clipboard permissions differ for each browser.
+function copyEmail() {
+    navigator.clipboard.writeText("joshua.ngo710@gmail.com");
+    console.log("Email copied to clipboard.")
+}
+
+//Testing to see if the script works
 function sayHello() {
     console.log("hellow world.")
 }
