@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chatroom-project</title>
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="default.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet"> 
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,500&display=swap" rel="stylesheet">  
+
+    <link href="https://fonts.googleapis.com/css2?family=Tektur&display=swap" rel="stylesheet"> 
+
+    <link href="https://fonts.googleapis.com/css2?family=Cousine:wght@700&family=Tektur&display=swap" rel="stylesheet"> 
+
+    <link id="color-theme" rel="stylesheet" type="text/css" href="default.css">
+</head>
+<body>
+
+    <!-- First section where I just introduce what the project is about. -->
+    <section class="section1">
+        <div class="project-title">
+            <h1>Web Chatroom Application</h1>
+        </div>
+
+        <div class="proj-intro-container">
+            <h2>What is the project about?</h2>
+            <div class="break"></div>
+
+            <div class="proj-intro-wrapper">
+
+                <p>This project is a web application I built that allows users to chat with one another. It was an individual
+                    project I built which utilizes sockets and other technologies to send responses to its end users, in this case,
+                    chat messages sent by other people in the chatroom.
+                </p>
+                <div class="break-large"></div>
+                <img class="feature-img" src="images/josh_long_hair.png">
+            </div>
+
+            
+        </div>
+    </section>
+
+    <!-- Second section should explain the technologies used. -->
+    <section class="section1">
+        <div class="project-title">
+            <h2>Technologies and Features</h2>
+        </div>
+        <div class="proj-description-container">
+
+            <div class="description-wrapper">
+                
+                <p>This project is a web application that utilizes socket technology to send requests and responses
+                    from a sender and a receiver. I utilized this concept to allow end users to send and receive the 
+                    sockets in the form of messages.
+                </p>
+                <p>Each time a user sends a message, it creates a socket from that user containing that message and 
+                    sends that message to the users in the chatroom, who will receive this said message. Messages will
+                    have other data sent along with it, such as who sent the message (The user is prompted to enter their
+                    name before their join the chatroom), the time it was received, etc.
+                </p>
+                <p>A neat fun feature included is being able to change the color of your name, using the "/changecolor" prefix 
+                    paired with a hexcode to change your name to any color. Other users will see this color when you send a message.
+                </p>
+
+            </div>
+        </div>
+    </section>
+    
+    <section class="section1">
+        <div class="project-title"">
+            <h2>Skills I learned</h2>
+        </div>
+
+        <div class="proj-description-container">
+            <div class="break"></div>
+            
+            <div class="description-wrapper">
+                <p>The skills I've learned from this project include:</p>
+                <div class="list-wrapper">
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Flexbox and Flex</li>
+                        <li>JavaScript</li>
+                        <li>JavaScript socket library and how to use libraries</li>
+                    </ul>
+                </div>
+                
+                    <p>Building the front end was done using HTML and CSS, and integrating concepts such as Flex and Flexbox style
+                        formatting. This was my first project using flex, and I've learned how to utilize it to make my webpage
+                        responsive for devices with varying sizes.  
+                    </p>
+                        
+                    <p>The backend was all built on JavaScript, and using a socket library to be able to implement the message
+                        sending with ease. It was also my first time using JavaScript, which introduced me to the numerous libraries availabe
+                        supported by JavaScript. 
+                    </p>
+            </div>
+            
+        
+
+        </div>
+    </section>
+
+    <section class="section1">
+        <div class="project-title">
+            <h2>More Snapshots</h2>
+        </div>
+
+        <div class="proj-snapshot-container" style="border: 5px solid black;">
+            <p>Some more snapshots of the application:</p>
+            <div class="break"></div>
+
+            
+            <div class="snapshot-wrapper">
+             <div>
+                 <img class="snapshot" src="images/github.png">
+             </div>
+             <div>
+                <img class="snapshot" src="images/github.png">
+            </div>
+
+            <div>
+                <img class="snapshot" src="images/github.png">
+            </div>
+
+            <div>
+                <img class="snapshot" src="images/github.png">
+            </div>
+        
+            </div>
+        </div>
+    </section>
+
+    <script src="project-page-script.js"></script>
+
+</body>
+</html>

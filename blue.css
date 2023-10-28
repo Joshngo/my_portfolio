@@ -1,0 +1,20 @@
+:root {
+    --mainTextColor: #e6f0f7;
+    --secondaryTextColor: #403938;
+    --tertiaryTextColor: #403938;
+    
+
+    --mainBordercolor: #a7bccc;
+    --secondaryBorderColor:#25274d;
+ 
+    --backgroundColor1: #0D355A;
+    --backgroundColor2: #5EABED;
+    --backgroundColor3: #C0FFEE;
+
+    --bannerColors: #BADA55;
+
+    --buttonColor1: white;
+
+    --backdropColorMain: #13131E;
+    --backdropColorSecond: #13131E;
+}

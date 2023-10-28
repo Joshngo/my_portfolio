@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Joshua Ngo</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+
+    <link rel="stylesheet" type="text/css" href="default.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet"> 
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,500&display=swap" rel="stylesheet">  
+
+    <link href="https://fonts.googleapis.com/css2?family=Tektur&display=swap" rel="stylesheet"> 
+
+    <link href="https://fonts.googleapis.com/css2?family=Cousine:wght@700&family=Tektur&display=swap" rel="stylesheet"> 
+
+    <link id="color-theme" rel="stylesheet" type="text/css" href="default.css">
+
+
+    <script>
+        console.log("Hellow world");
+        </script>
+</head>
+
+<body>
+    
+    
+    <section class="section1"> 
+        <div class="nav-bar-container">
+            <div class="nav-bar">
+                
+                
+                <button class="nav-btn" id="about-me-nav">About me</button>
+                <button class="nav-btn" id="portfolio-nav">Portfolio</button>
+                <button class="nav-btn" id="contact-nav">Contact</button>
+
+                <div class="darkmode">
+                    <button data-mode="default" class="theme-button" id="default-theme"></button>
+                    <button data-mode="light" class="theme-button" id="light-theme"></button>
+                    <button data-mode="blue" class="theme-button" id="blue-theme"></button>
+                    <button data-mode="red" class="theme-button" id="red-theme"></button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="main-container">
+            <div id="greeting-wrap">
+                <h1 id="greeting-header" style="text-align: center;">Hi, I'm Josh Ngo</h1>
+            </div>
+            
+            <div class="intro-wrapper">
+                
+                <div class="left-column">
+                    <img class="slide-img" src="images/josh_lake.jpg">
+                    <h4 style="text-align: center; line-height: 0;">More of My Stuff</h4>
+                    <div id="socials-wrapper">
+                        <img id="linkedin" src="images/linkedin.png" onclick="">
+                        <img id="github" src="images/github.png">
+                    </div>
+                </div>
+                
+                <div class="right-column">
+                    <div id="who-am-i">
+                        <h2>Who am I?</h2>
+                        <p id="who-desc"">
+                            Just a Computer Science Graduate that loves his computer and has a passion for technology.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    
+    <section class="section1"> 
+        <div class="about-me-container">
+            <h2 id="about-me-header">About Me</h2>
+            <p style="padding-bottom: 1em;">I'm Joshua Ngo, a University of Calgary graduate 2023, with a
+                Bachelors in Computer Science. I've always had a passion for computers since I was in my junior
+                year in high school, and I have found myself enjoying developing and building my ideas. My greatest interests within the field would be
+                software development and video game development but I'm always eager to learn unfamiliar technologies
+                to expand my expertise.
+            </p>
+            
+            <div class="about-me-wrapper">
+                <div class="about-left-column">
+                    <div>
+                        <h3>My Expertise and Skills</h3>
+                        
+                        <p>Download my Resume: <a target="_blank" href="joshua_ngo_resume_.pdf" style="font-family:'Tektur', cursive;">My Resume</a></p>
+                        <p>Bachelor of Computer Science, University of Calgary</p>
+                    </div>
+                    
+                    <div id="expertise">
+                        <ul id="skills-list">
+                            <li>Java</li>
+                            <li>Python</li>
+                            <li>HTML and CSS</li>
+                            <li>JavaScript</li>
+                            <li>C, C#, C++</li>
+                        </ul>
+                        
+                        <ul id="skills-list">
+                            <li>Microsoft Visual Studio</li>
+                            <li>Github</li>
+                            <li>SQL and REST API</li>
+                            <li>Agile Methodology</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                
+                
+                
+                <div class="about-right-column">
+                    
+                    <h3>My Current Plans</h3>
+                    <p>I'm currently open for interviews and any opportunities to
+                        join a strong team that is passionate about the work that they do.</p>
+                        
+                        <p>On my free time, I am currently learning to expand my knowledge with C#, utilizing
+                            the Godot game engine to learn how to develop my own video game. I currently work
+                            with a few others on a small project in Godot that we are building. I was never
+                            given the opportunity to work with a game engine in my academic career but I have
+                            always had an strong interest for it.
+                        </p>
+                </div>
+
+
+            </div>
+            
+            
+        </div>
+    </section>
+    
+    <section class="section1"> 
+        <div class="portfolio-container">
+            <h2 id="portfolio-header">My Projects</h2>
+            
+            <div class="portfolio-wrapper">
+                
+                <div>
+                    <div id="proj-box">
+                        <img class="thumbnail" src="images/github.png">
+                        <div class="proj-preview">
+                            <h5 class="proj-title">Online Chatroom</h5>
+                            <p class="proj-desc">An online chatroom that utilizes sockets to allow multiple users to chat together.</p>
+                            <button class="read-more" id="chatroom-readmore">Read more</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <div id="proj-box">
+                        <img class="thumbnail" src="images/github.png">
+                        <div class="proj-preview">
+                            <h5 class="proj-title">Photo Manager</h5>
+                            <p class="proj-desc">An application that allows photographers to manage their photos and sales.</p>
+                            <button class="read-more">Read more</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <div id="proj-box">
+                        <img class="thumbnail" src="images/github.png">
+                        <div class="proj-preview">
+                            <h5 class="proj-title">Journal and Editor Web-app</h5>
+                            <p class="proj-desc">A web application that handles journal submission for editors to review with ease.</p>
+                            <button class="read-more">Read more</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <div id="proj-box">
+                        <img class="thumbnail" src="images/github.png">
+                        <div class="proj-preview">
+                            <h5 class="proj-title">Inventory Interface</h5>
+                            <p class="proj-desc">An application that focuses on keeping track of store inventory.</p>
+                            <button class="read-more">Read more</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+    </section>
+    
+    <section class="section1"> 
+        <div class="contact-container">
+            <h2 id="contact-header">Contact Me!</h2>
+            <div class="contact-wrapper">
+                
+                <form id="contact-form">
+                    
+                    <label class="contact-label">Name</label>
+                    <input class="input-field" type="text" name="Name">
+                    
+                    <label class="contact-label">Subject</label>
+                    <input class="input-field" type="text" name="Subject">
+                    
+                    <label class="contact-label">Email</label>
+                    <input class="input-field" type="text" name="Email">
+                    
+                    <label class="contact-label">Phone Number</label>
+                    <input class="input-field" type="text" name="Phone Number">
+                    
+                    <label class="contact-label">Message</label>
+                    <textarea class="input-field" type="text" name="Message"></textarea>
+                    
+                    <input id="send-info" type="submit" value="Send">
+                </form>
+            </div>
+            
+            
+        </div>
+    </section>
+    
+    
+    <script src="main-script.js"></script>
+    
+</body>
+</html>
