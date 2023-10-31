@@ -17,6 +17,11 @@ $("#linkedin").on("click", function() {
     window.open("https://www.linkedin.com/in/joshua-ngo/")
 })
 
+$("#linkedin2").on("click", function() {
+    console.log("Going to Joshua's Linked in!")
+    window.open("https://www.linkedin.com/in/joshua-ngo/")
+})
+
 //Redirect to my github
 $("#github").on("click", function() {
     console.log("Going to Joshua's Github.")
