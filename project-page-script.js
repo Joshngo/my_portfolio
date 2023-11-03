@@ -28,6 +28,22 @@ function setTheme(theme) {
     localStorage.setItem("currentTheme", theme)
 }
 
+//Go to different repositories
+$("#to-chatroom-repo").on("click", function() {
+    console.log("Going to chatroom repo")
+    window.open("https://github.com/Joshngo/SocketIOChat")
+})
+
+$("#to-journal-repo").on("click", function() {
+    console.log("Going to journal repo")
+    window.open("https://github.com/Joshngo/Journal-submission-web-application")
+})
+
+$("#to-studio4-repo").on("click", function() {
+    console.log("Going to photo repo")
+    window.open("https://github.com/richardnorman/Studio4")
+})
+
 function sayHello() {
     console.log("HELLO WORLD. PROJECT PAGE.")
 }

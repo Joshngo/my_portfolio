@@ -18,30 +18,6 @@
     --backdropColorSecond: ;
 }
 
-/* #f0c030; */
-/* #516e85 */
-/* #a7bccc */
-
-/*/////////////// Origina Color Schematic /////////////*/
-
-/* --mainTextColor: #e6f0f7;
---secondaryTextColor: #25274d;
---tertiaryTextColor: #403938;
-
-
---mainBordercolor: #a7bccc;
---secondaryBorderColor:#25274d;
-
---backgroundColor1: #25274d;
---backgroundColor2: #5c8f59;
---backgroundColor3: #a7bccc;
-
---bannerColors: #3d3634;
-
---buttonColor1: white; */
-
-/*////////////////////////////////*/
-
 html, body {
     padding: 0;
     margin: 0;
@@ -442,6 +418,7 @@ a {
 }
 
 #contact-header {
+    padding-top: 1em;
     color: var(--mainTextColor);
 }
 
@@ -572,7 +549,6 @@ a {
 .description-wrapper {
     text-align: left;
     width: 100%;
-    /* border: 10px solid black; */
     background: var(--backgroundColor2);
     -webkit-box-shadow: 14px 13px 0px 2px var(--backdropColorSecond); 
     box-shadow: 14px 13px 0px 2px var(--backdropColorSecond);
@@ -609,8 +585,10 @@ a {
     margin: 5px;
 }
 
-#to-chatroom-repo {
-    align-self: flex-start;
+#to-chatroom-repo, #to-journal-repo, #to-studio4-repo {
+    display:unset;
+    margin-left: 2em;
+    margin-top: 0px;
 }
 
 @media screen and (max-width: 1600px) {
