@@ -31,10 +31,22 @@ $("#github").on("click", function() {
 // $("#email").on("click", copyEmail());
 
 //Open the chatroom project page.
-$("#chatroom-readmore").on("click", function() {
+$("#chatroom-read-more").on("click", function() {
     console.log("Heard.")
     window.open("chatroom-project.html");
 });
+
+//Open the journal editor project page.
+$("#journal-read-more").on("click", function() {
+    console.log("Heard. Going to the journal page.")
+    window.open("journal-project.html")
+})
+
+//Open the photo manager project page.
+$("#photo-read-more").on("click", function () {
+    console.log("Heard. Going to the photo page.")
+    window.open("photo-project.html");
+})
 
 //Use jquery animation to scroll smoothly to certain sections.
 $("#about-me-nav").on("click", function () {

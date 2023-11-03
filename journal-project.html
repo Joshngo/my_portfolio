@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>journal-editor-project</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="default.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet"> 
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,500&display=swap" rel="stylesheet">  
+
+    <link href="https://fonts.googleapis.com/css2?family=Tektur&display=swap" rel="stylesheet"> 
+
+    <link href="https://fonts.googleapis.com/css2?family=Cousine:wght@700&family=Tektur&display=swap" rel="stylesheet"> 
+
+    <link id="color-theme" rel="stylesheet" type="text/css" href="default.css">
+
+</head>
+<body>
+    
+    <!-- Where I introduce what the project is about -->
+    <section class="section1">
+        <div class="project-title">
+            <h1>Journal Editor Web Application</h1>
+        </div>
+
+        <div class="proj-intro-container">
+            <h2>What is the project about?</h2>
+            <div class="break"></div>
+
+            <div class="proj-intro-wrapper">
+                <p>This project was a collaborative project done with three other peers, in which we developed an application
+                    that provides easy submission of papers for researchers and paper feedback from editors and reviewers. Its target audience
+                    is meant for universities, namely their researchers and journal writers.
+                </p>
+            </div>
+
+        </div>
+    </section>
+    
+    <!-- Second section to explain the technologies used-->
+    <section class="section1">
+        <div class="project-title">
+            <h2>Tech and features</h2>
+        </div>
+
+        <div class="proj-description-container">
+            <div class="description-wrapper">
+
+                <p>This project was built to help researchers and journal writers have system to submit their papers to their editors
+                    for review and feedback. Reviewers would be able to review these submissions and use the system to easily send feedback
+                    to the writers conveniently. Editors would be able to send edits and feedback on the content of the paper.
+                </p>
+
+                <p>Because our application was designed to primarily be used by universities, it was important that the application kept
+                    track of data of submission and the types of users involved with submissions. This led us to build account and login
+                    functionality, so that submissions are kept track of per user, and allow users to easily see what editors and reviewers are available
+                    and who responded on papers.
+                </p>
+
+                <img class="feature-img" src="images/journalEditor/login.png">
+
+                <p>For managing of users within the system, we granted access to adminstrative controls to an assumed administrator. This 
+                    administrator will have a different dashboard compared to the other users, and will be able to to manage the users of the system. (Add user, delete users, etc.)
+                    Data of users is tracked by a JSON file with all administrative properties of each user.
+                </p>
+
+                <img class="feature-img" src="images/journalEditor/admin.png">
+
+                <p>Researchers who are submitting their papers will see a dashboard of the papers they have submitted, and the status of their submissions once they log in. Here, they can submit new papers, or resubmit
+                    a paper if they wish. They will be able to nominate a reviewer they wish for their submission. If resubmitting, they must choose a paper that has previously
+                    been submitted.
+                </p>
+
+                <img class="feature-img" src="images/journalEditor/researcher-dashboard.png">
+                <img class="feature-img" src="images/journalEditor/submission.png">
+                <img class="feature-img" src="images/journalEditor/resubmission.png">
+
+
+                <p>Reviewers will be able to see papers they have been prompted to review in their dashboard once they log in. They'll be able to select the papesr, download them and then
+                    send a message back to the researcher who had submit their paper to them.
+                </p>
+
+                <img class="feature-img" src="images/journalEditor/reviewer-dashboard.png"> 
+                <img class="feature-img" src="images/journalEditor/review-paper.png">
+ 
+                <p>Editors will be met with a similar dashboard to the reviewer, where they can select papers to edit and give feedback to the submissions. They will also have the ability to set the status
+                    of the papers to let the researchers know if they still need to edit it or it has been finished review.
+                </p>
+
+                <img class="feature-img" src="images/journalEditor/editor-dashboard.png">
+                <img class="feature-img" src="images/journalEditor/set-status.png">
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Third section to show skills learned. -->
+    <section class="section1">
+        <div class="project-title">
+            <h2>Skills I learned</h2>
+        </div>
+
+        <div class="proj-description-container">
+            <div class="description-wrapper">
+                <p>The skills I learned from this project include:</p>
+
+                <div class="list-wrapper">
+                    <ul>
+                        <li>Java and Eclipse IDE</li>
+                        <li>Maven and Vaadin framework</li>
+                        <li>SCRUM Methodology</li>
+                        <li>Trello for progress reports and planning</li>
+                    </ul>
+                </div>
+
+                <p>Because the project was built to be a web based application, our team decided to use what the Vaadin web framework
+                    offered for front end development, as well as using CSS to style the application according to our plans.
+                </p>
+                
+                <p>The backend was created in Java, using Maven tools to manage the project and assist in running it. During this 
+                    project the editor I used was Eclipse, a Java IDE for development.
+                </p>
+
+                <p>During development, the team and I followed Scrum procedure to develop the application, participating in proper 
+                    sprints and team meetings. Our planning process involved design user case scenarios, UML Class diagrams, Data flow diagrams
+                    and several other techniques to help develop the application.
+                </p>
+
+                <p>The Repository for this project has a comprehensive description, feel free to take a look.</p>
+
+                
+
+                <div style="text-align: left;">
+                    <img class="small-img" id="to-journal-repo" src="images/github.png">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+<!-- Uneeded section -->
+
+    <!-- <section class="section1">
+        <div class="project-title">
+            <h2>More Snapshots</h2>
+        </div>
+
+        <div class="proj-snapshot-container">
+            <p>Some more snapshots of the application:</p>
+            <div class="break"></div>
+
+
+        </div>
+    </section> -->
+
+    <script src="project-page-script.js"></script>
+
+</body>
+</html>
