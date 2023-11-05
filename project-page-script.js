@@ -44,6 +44,11 @@ $("#to-studio4-repo").on("click", function() {
     window.open("https://github.com/richardnorman/Studio4")
 })
 
+$("#to-inventory-repo").on("click", function() {
+    console.log("Going to photo repo")
+    window.open("https://github.com/simran2684/Inventory-System-Tracker")
+})
+
 function sayHello() {
     console.log("HELLO WORLD. PROJECT PAGE.")
 }
