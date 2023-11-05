@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inventory-database-project</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="default.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet"> 
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,500&display=swap" rel="stylesheet">  
+
+    <link href="https://fonts.googleapis.com/css2?family=Tektur&display=swap" rel="stylesheet"> 
+
+    <link href="https://fonts.googleapis.com/css2?family=Cousine:wght@700&family=Tektur&display=swap" rel="stylesheet"> 
+
+    <link id="color-theme" rel="stylesheet" type="text/css" href="default.css">
+</head>
+<body>
+    
+    <section class="section1">
+        <div>
+            <h1 class="project-title">Store Inventory Database</h1>
+        </div>
+
+        <div class="proj-intro-container">
+            <h2>What is this project about?</h2>
+            <div class="break"></div>
+
+            <div class="proj-intro-wrapper">
+
+                <p>This was a database project I built with a team, which centered around the idea of keeping track of store inventory, employee data
+                    and other useful information that is important for a store system.
+                </p>
+                <img class="feature-img" src="images/inventoryTracker/inventory.png">
+                <img>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="section1">
+        <div class="project-title">
+            <h2>Technologies and Features</h2>
+        </div>
+        <div class="proj-description-container">
+
+            <div class="description-wrapper">
+                
+                <p>To access the database and populate its tables, we used SQL, creating an SQL file an populating it with starting values.
+                    Once initialized, we imported it to a a web server program XAMPP and PHPmyAdmin to make API calls to and from the database. 
+                    Once the database in PHPmyAdmin had the SQL file imported, we could use that interface to add and delete relations from tables
+                    using SQL queries.
+                </p>
+
+                <img class="feature-img" src="images/inventoryTracker/phpmyadmin.png">
+
+                <p>The backend was all built using PHP, all of the different types of operations being handled by this language. To make calls and queries easier,
+                    we created a simple front end interface using HTML and CSS to test API calls from a different interface than the PHPmyAdmin method.
+                </p>
+
+                <p>The database keeps track of several parts of a store system, including inventory, products on display, deliver schedules and employee data.
+                    The user of the interface would be able to update the stock of items on shelves, check data of each item, and modify items as they need.
+                    Similarily, they can also do the same for employees, adding and deleting them or viewing data of the current employees. The schedule part of
+                    the system is also similar, where the user can create, delete or update their deliver schedules.              
+                </p>
+
+                <img class="feature-img" src="images/inventoryTracker/add-product-1.png">
+                <img class="feature-img" src="images/inventoryTracker/add-product-2.png">
+                
+                <p>Employee Section</p>
+                <img class="feature-img" src="images/inventoryTracker/employee.png">
+                <img class="feature-img" src="images/inventoryTracker/create-employee.png">
+                <img class="feature-img" src="images/inventoryTracker/create-employee2.png">
+
+                <p>Schedule</p>
+                <img class="feature-img" src="images/inventoryTracker/schedule.png">
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section1">
+        <div class="project-title"">
+            <h2>Skills I learned</h2>
+        </div>
+
+        <div class="proj-description-container">
+            <div class="break"></div>
+            
+            <div class="description-wrapper">
+                <p>The skills I've learned from this project include:</p>
+                <div class="list-wrapper">
+                    <ul>
+                        <li>PHP</li>
+                        <li>SQL and API Calls</li>
+                        <li>PHPmyAdmin and Database operations</li>
+                    </ul>
+                </div>
+                
+                    <p>This was my first project using SQL to make queries and populate the database, and it
+                        was a little bit of a challenge setting it up with XAMPP and PHPmyAdmin. It was a big 
+                        learning experience to see how all the database operations work and all the different SQL
+                        methods to manage the system.
+                    </p>
+                        
+                    <p>There was a lot of coding done in PHP, which was also a challenge for me since I was unfamiliar
+                        with the language. Overall, the PHP files were built quite well, as most of the database front editing
+                        calls worked properly. If I could improve the project, I would add more restraints on some of the columns
+                        for each table, and improve some of the styling. The biggest skills I've learned from this project
+                        were primarily setting up the database and making queries, but it could be very much improved for a store inventory
+                        use case scenario for some of the data.
+                    </p>
+
+                    <p>
+                        Repository Link Below:
+                    </p>
+
+                    <div style="text-align: left;">
+                        <img class="small-img" id="to-inventory-repo" src="images/github.png">
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="project-page-script.js"></script>
+
+</body>
+</html>

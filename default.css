@@ -585,7 +585,7 @@ a {
     margin: 5px;
 }
 
-#to-chatroom-repo, #to-journal-repo, #to-studio4-repo {
+#to-chatroom-repo, #to-journal-repo, #to-studio4-repo, #to-inventory-repo {
     display:unset;
     margin-left: 2em;
     margin-top: 0px;

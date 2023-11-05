@@ -48,6 +48,12 @@ $("#photo-read-more").on("click", function () {
     window.open("photo-project.html");
 })
 
+//Open the inventory manager project page.
+$("#inventory-database-read-more").on("click", function() {
+    console.log("Heard. Going to the inventory tracker page.")
+    window.open("inventory-database.html")
+})
+
 //Use jquery animation to scroll smoothly to certain sections.
 $("#about-me-nav").on("click", function () {
     console.log("Scrolling down.");
