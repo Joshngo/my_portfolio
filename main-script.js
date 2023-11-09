@@ -56,16 +56,19 @@ $("#inventory-database-read-more").on("click", function() {
 
 //Use jquery animation to scroll smoothly to certain sections.
 $("#about-me-nav").on("click", function () {
+    $('html, body').stop();
     console.log("Scrolling down.");
     $('html, body').animate({scrollTop: $("#about-me-header").offset().top -150},'slow');
 });
 
 $("#portfolio-nav").on("click", function () {
+    $('html, body').stop();
     console.log("Scrolling down.");
     $('html, body').animate({scrollTop: $("#portfolio-header").offset().top - 150},'slow');
 });
 
 $("#contact-nav").on("click", function () {
+    $('html, body').stop();
     console.log("Scrolling down.");
     $('html, body').animate({scrollTop: $("#contact-header").offset().top - 150},'slow');
 });

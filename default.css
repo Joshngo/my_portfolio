@@ -273,13 +273,15 @@ a {
     padding-left: 2em;
     padding-right: 1em;
     padding-bottom:2em;
+    /* border: 10px solid black; */
+    margin: auto;
 }
 
 #who-am-i{
     display: block;
     width: 80%;
     max-width: 300px;
-    height: 400px;
+    height: auto;
     /* border: 4px solid var(--secondaryBorderColor); */
     background-color: var(--backgroundColor3);
     padding: 15px;
@@ -302,8 +304,10 @@ a {
 .slide-img {
     display: block;
     margin: 0 auto;
-    height: 400px;
-    width: 250px;
+    width: 90%;
+    height: 95%;
+    max-height: 400px;
+    max-width: 250px;
     object-fit: cover;
     margin-bottom: 1em;
 }
@@ -330,6 +334,13 @@ a {
     height: 200px;
     display: block; 
     object-fit:cover;
+}
+
+#resume-link {
+    font-family:'Tektur', cursive;
+    color: var(--mainTextColor);
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
 }
 
 #expertise {
@@ -490,6 +501,7 @@ a {
     display: flex;
     justify-content: center;
     text-align: center;
+    margin: 0 auto;
 }
 
 .proj-intro-container {
@@ -525,6 +537,10 @@ a {
     text-align: center;
     width:1400px;
     margin: 0 auto;
+}
+
+.title-text {
+    font-size: 4.5vw;
 }
 
 .break {
@@ -591,52 +607,55 @@ a {
     margin-top: 0px;
 }
 
+
+
+
 @media screen and (max-width: 1600px) {
     .main-container{
-        width: 95%;
+        width: 80%;
     }
     .greet-wrapper {
-        width:95%;
+        width:80%;
     }
 
     #greeting-wrap {
-        width: 90%;
+        width: 80%;
         padding-left: 3em;
     }
 
     .about-me-container{
-        width: 90%;
+        width: 80%;
     }
 
     .portfolio-container{
-        width: 90%;
+        width: 80%;
     }
 
     .contact-container{
-        width: 90%;
+        width: 80%;
     }
 
     .proj-intro-container {
-        width: 90%;
+        width: 80%;
     }
 
     .proj-description-container {
-        width: 90%;
+        width: 80%;
     }
 
     .proj-snapshot-container {
-        width: 90%;
+        width: 80%;
     }
 
     .intro-wrapper {
         max-width: 1000px;
-        border: 10px solid black;
+        /* border: 10px solid black; */
         margin: 0 auto;
     }
 
     .feature-img {
         display: block;
-        max-width: 90%;
+        max-width: 80%;
     }
 
 }
@@ -679,11 +698,38 @@ a {
         ;
     }
 
-    /* .right-column {
-        justify-content: center;
-        padding-left: 0px;
-        padding-bottom: 4em;
+    /* .slide-img {
+        width: 90%;
+        height: 95%;
     } */
 
+    .right-column {
+        justify-content: center;
+        padding-left: 0;
+        width: 75%;
+        /* border: 10px solid black; */
+    }
+
+    .left-column {
+        padding: 1px;
+        padding-top: 2em;
+    }
+
+    #who-am-i {
+        width: 80%;
+        margin: auto;
+    }
+
+    #who-desc {
+        font-size: 18px;
+    }
+
+    .about-right-column {
+        width: 80%;
+    }
+
+    .title-text {
+        font-size: calc(48px);
+    }
 
 }
